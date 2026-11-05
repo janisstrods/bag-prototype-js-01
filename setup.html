@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bag prototype setup</title>
+    <script type="module" crossorigin src="/bag-prototype-js-01/assets/setup-J8fDUuaU.js"></script>
+    <link rel="modulepreload" crossorigin href="/bag-prototype-js-01/assets/params-wTmZbeW9.js">
+    <link rel="stylesheet" crossorigin href="/bag-prototype-js-01/assets/setup-9cFyB7gc.css">
+  </head>
+  <body>
+    <main class="setup">
+      <p class="game-name">BAG PROTOTYPE</p>
+      <h1>DEBUG: PLAYTEST SETUP</h1>
+
+      <form id="setup-form" autocomplete="off" novalidate>
+        <div class="field">
+          <div class="field-head">
+            <label for="seed">SEED</label>
+            <code class="switch">?seed=</code>
+          </div>
+          <div class="field-row">
+            <input
+              id="seed"
+              type="text"
+              inputmode="numeric"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              placeholder="RANDOM"
+              aria-describedby="seed-error"
+            />
+            <button type="button" id="seed-random" class="small-button">RANDOM</button>
+          </div>
+          <p id="seed-error" class="error" hidden></p>
+        </div>
+
+        <div class="option">
+          <input type="checkbox" id="rules" />
+          <label for="rules">SHOW THE RULES CARD AT THE START</label>
+          <code class="switch">?rules=0 TO HIDE</code>
+        </div>
+
+        <div class="option">
+          <input type="checkbox" id="odds" />
+          <label for="odds">DEBUG: NEXT-DRAW BUST ODDS</label>
+          <code class="switch">?odds=1</code>
+        </div>
+
+        <div id="main-numbers"></div>
+
+        <details id="more">
+          <summary>MORE (RULE NUMBERS)</summary>
+          <div id="more-numbers"></div>
+        </details>
+
+        <div class="link-block">
+          <p class="block-label">LINK</p>
+          <div class="link-row">
+            <p id="link-url" class="link-url"></p>
+            <button type="button" id="copy" class="small-button">COPY</button>
+          </div>
+        </div>
+
+        <button type="submit" id="play" class="play-button">PLAY</button>
+      </form>
+    </main>
+  </body>
+</html>
