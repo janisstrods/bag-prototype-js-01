@@ -6,4 +6,4 @@ Built game only, published from a private source repo by `npm run deploy:pages`.
 - Play with DEBUG odds: https://janisstrods.github.io/bag-prototype-js-01/?odds=1
 - Playtest setup: https://janisstrods.github.io/bag-prototype-js-01/setup.html
 
-Source: `main` @ `182bb76`
+Source: `main` @ `7652bb3`
